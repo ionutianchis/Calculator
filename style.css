@@ -1,0 +1,100 @@
+#outline {
+    width: 353px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(94, 91, 91);
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+#display {
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    right: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.button {
+    width: 89px;
+    height: 80px;
+    margin-right: -5px;
+    border: 1px solid rgb(107, 105, 105);
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(151, 151, 151);
+}
+
+.button:active {
+    background-color: rgb(196, 197, 196);
+}
+
+.operatorButton {
+    background-color: orange;
+}
+
+#firstRow {
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+}
+.b0 { 
+    width: 178.4px;
+    height: 80px;
+    margin-right: -6px;
+    border-radius: 0 0 0 10px;
+    border: 1px solid rgb(107, 105, 105);
+    font-size: large;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(151, 151, 151);
+}
+
+.b0:active {
+    background-color: rgb(196, 197, 196);
+}
+
+.bEqual {
+    border-radius: 0 0 10px 0;
+    border: 1px solid rgb(107, 105, 105);
+    background-color: orange;
+}
+
+#secondRow {
+    position: absolute;
+    bottom: 79px;
+    width: 350px;
+}
+
+#thirdRow {
+    position: absolute;
+    bottom: 158px;
+    width: 350px;
+}
+
+#forthRow {
+    position: absolute;
+    bottom: 237px;
+    width: 350px;
+}
+
+#fifthRow {
+    position: absolute;
+    bottom: 316px;
+    width: 350px;
+}
+
+.bC {
+    width: 177px;
+    height: 80px;
+}
