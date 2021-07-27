@@ -1,3 +1,7 @@
+html {
+    background-color: rgb(243, 159, 32);
+}
+
 #outline {
     width: 353px;
     height: 500px;
@@ -49,7 +53,7 @@
     width: 350px;
 }
 .b0 { 
-    width: 178.4px;
+    width: 178px;
     height: 80px;
     margin-right: -6px;
     border-radius: 0 0 0 10px;
