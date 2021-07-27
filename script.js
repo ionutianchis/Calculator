@@ -1,46 +1,3 @@
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>Calculator</title>
-</head>
-
-<body>
-    <div id='outline'>
-        <div id='display'> 0 </div>
-        <div id='firstRow'>
-            <button class = 'b0 ' value='0'> 0 </button>
-            <button class ='bComma button'> , </button>
-            <button class ='bEqual button'> = </button>
-        </div>
-        <div id='secondRow'>
-            <button class='button numberButton'value='1'>1</button>
-            <button class='button numberButton'value ='2'>2</button>
-            <button class='button numberButton'value ='3'>3</button>
-            <button class='b+ button operatorButton'value='+'>+</button>
-        </div>
-        <div id='thirdRow'>
-            <button class='button numberButton'value ='4'>4</button>
-            <button class='button numberButton'value ='5'>5</button>
-            <button class='button numberButton'value ='6'>6</button>
-            <button class='b- button operatorButton'value='-'>-</button>
-        </div>
-        <div id='forthRow'>
-            <button class='button numberButton'value ='7'>7</button>
-            <button class='button numberButton'value ='8'>8</button>
-            <button class='button numberButton'value ='9'>9</button>
-            <button class='bX button operatorButton'value ='x'>x</button>
-        </div>
-        <div id='fifthRow'>
-            <button class='bAc button'>AC</button>
-            <button class='bC button'>C</button>
-            <button class='bDivision button operatorButton'value='/'>÷</button>
-        </div>
-    </div>
-
-</body>
-
-<script>
 
 function add(num1, num2) {
     return num1 + num2;
@@ -297,7 +254,3 @@ equalButton.addEventListener('click', () => {
     }
 });
 
-
-
-</script>
-</html>
