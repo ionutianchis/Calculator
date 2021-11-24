@@ -6,37 +6,43 @@
 </head>
 
 <body>
-    <div id='outline'>
-        <div id='display'> 0 </div>
-        <div id='firstRow'>
-            <button class = 'b0 ' value='0'> 0 </button>
-            <button class ='bComma button'> , </button>
-            <button class ='bEqual button'> = </button>
+    <div class="container">
+        <div class='calculator-outline'>
+
+            <div id='display' class='calculator-display'>0</div>
+
+            <div class="calculator-grid">
+                <button class='button all-clear' id='all_clear_btn' >AC</button>
+                <button class='button clear' id='clear_btn' >C</button>
+                <button class='button operatorButton' id='divide_btn' value='/'>÷</button>
+
+                <button class='button numberButton' value='7'>7</button>
+                <button class='button numberButton' value='8'>8</button>
+                <button class='button numberButton' value='9'>9</button>
+                <button class='button operatorButton' id='x_btn' value='x'>x</button>
+                
+                <button class='button numberButton' value='4'>4</button>
+                <button class='button numberButton' value='5'>5</button>
+                <button class='button numberButton' value='6'>6</button>
+                <button class='button operatorButton' id='minus_btn' value='-'>-</button>
+
+                <button class='button numberButton' value='1'>1</button>
+                <button class='button numberButton' value='2'>2</button>
+                <button class='button numberButton' value='3'>3</button>
+                <button class='button operatorButton' id='plus_btn' value='+'>+</button>
+
+                <button class ='button nr0' id='0_btn' value='0'> 0 </button>
+                <button class ='button' id='comma_btn' >,</button>
+                <button class ='button operatorButton equals' id='equals_btn'> = </button>
+            </div>
         </div>
-        <div id='secondRow'>
-            <button class='button numberButton'value='1'>1</button>
-            <button class='button numberButton'value ='2'>2</button>
-            <button class='button numberButton'value ='3'>3</button>
-            <button class='b+ button operatorButton'value='+'>+</button>
-        </div>
-        <div id='thirdRow'>
-            <button class='button numberButton'value ='4'>4</button>
-            <button class='button numberButton'value ='5'>5</button>
-            <button class='button numberButton'value ='6'>6</button>
-            <button class='b- button operatorButton'value='-'>-</button>
-        </div>
-        <div id='forthRow'>
-            <button class='button numberButton'value ='7'>7</button>
-            <button class='button numberButton'value ='8'>8</button>
-            <button class='button numberButton'value ='9'>9</button>
-            <button class='bX button operatorButton'value ='x'>x</button>
-        </div>
-        <div id='fifthRow'>
-            <button class='bAc button'>AC</button>
-            <button class='bC button'>C</button>
-            <button class='bDivision button operatorButton'value='/'>÷</button>
-        </div>
+
     </div>
+
+    <footer>
+        <p>© Jonthejon10, 2021</p>
+        <button class='github-button'></button>
+    </footer>
 
 <script src="script.js"></script>
 

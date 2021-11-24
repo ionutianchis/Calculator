@@ -1,45 +1,72 @@
 html {
     background-color: rgb(243, 159, 32);
-}
-
-#outline {
-    width: 353px;
-    height: 500px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(94, 91, 91);
-    border-radius: 10px;
-    border: 1px solid grey;
-}
-
-#display {
-    position: absolute;
-    text-align: right;
-    top: 60px;
-    right: 0;
-    margin-right: 10px;
-    border-radius: 10px;
-    font-size: 25px;
     font-family: sans-serif;
     color: white;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.calculator-outline {
+    width: 353px;
+    height: 500px;
+    background-color: rgb(94, 91, 91);
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-display {
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+.calculator-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button.clear {
+    grid-column: 2/4;
+}
+
+.button.nr0 {
+    grid-column: 1/3;
+    border-radius: 0 0 0 10px;
+}
+
+.button.equals {
+    border-radius: 0 0 10px 0;
+}
+
 .button {
-    width: 89px;
     height: 80px;
-    margin-right: -5px;
     border: 1px solid rgb(107, 105, 105);
     font-size: 20px;
-    font-family: sans-serif;
     color: white;
     background-color: rgb(151, 151, 151);
 }
 
-.button:active {
+.button:hover {
     background-color: rgb(196, 197, 196);
 }
 
@@ -47,58 +74,26 @@ html {
     background-color: orange;
 }
 
-#firstRow {
-    position: absolute;
-    bottom: 0;
-    width: 350px;
-}
-.b0 { 
-    width: 178px;
-    height: 80px;
-    margin-right: -6px;
-    border-radius: 0 0 0 10px;
-    border: 1px solid rgb(107, 105, 105);
-    font-size: large;
-    font-family: sans-serif;
-    color: white;
-    background-color: rgb(151, 151, 151);
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 17px;
 }
 
-.b0:active {
-    background-color: rgb(196, 197, 196);
+.github-button {
+    width: 26px;
+    height: 25px;
+    background-image: url("./github-icon.svg");
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
 }
 
-.bEqual {
-    border-radius: 0 0 10px 0;
-    border: 1px solid rgb(107, 105, 105);
-    background-color: orange;
-}
-
-#secondRow {
-    position: absolute;
-    bottom: 79px;
-    width: 350px;
-}
-
-#thirdRow {
-    position: absolute;
-    bottom: 158px;
-    width: 350px;
-}
-
-#forthRow {
-    position: absolute;
-    bottom: 237px;
-    width: 350px;
-}
-
-#fifthRow {
-    position: absolute;
-    bottom: 316px;
-    width: 350px;
-}
-
-.bC {
-    width: 177px;
-    height: 80px;
+.github-button:hover {
+    transform: rotate(360deg);
 }
