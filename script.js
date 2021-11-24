@@ -1,44 +1,37 @@
 
-function add(num1, num2) {
-    return num1 + num2;
-};
+const add = (num1, num2) => num1 + num2
 
-function subtract(num1, num2) {
-    return num1 - num2;
-};
- 
-function multiply(num1, num2) {
-    return num1 * num2;
-};
+const subtract = (num1, num2) => num1 - num2
 
-function division(num1, num2) {
-    return num1 / num2;
-};
+const multiply = (num1, num2) => num1 * num2
 
-function operate(num1, operator, num2) {
-    if (operator == '+') {
-        return add(num1, num2);
-    } else if (operator == '-') {
+const divide = (num1, num2) => num1 / num2
+
+const operate = (num1, operator, num2) => {
+    if (operator === '+') {
+        return add(num1, num2)
+    } else if (operator === '-') {
         return subtract(num1, num2)
-    } else if (operator == 'x') {
+    } else if (operator === 'x') {
         return multiply(num1, num2)
-    } else if (operator == '/') {
-        return division(num1, num2);
+    } else if (operator === '/') {
+        return divide(num1, num2)
     };
 };
 
 const display = document.getElementById('display');
-const numberButtons = document.getElementsByClassName('numberButton');
-const button0 = document.getElementsByClassName('b0')[0];
-const operatorButtons = document.getElementsByClassName('operatorButton');
-const equalButton = document.getElementsByClassName('bEqual')[0];
-const clearButton = document.getElementsByClassName('bC')[0];
-const clearAllButton = document.getElementsByClassName('bAc')[0];
+const numberButtons = document.getElementsByClassName('number-button');
+const button0 = document.getElementById('0_btn');
+const operatorButtons = document.getElementsByClassName('operator-button');
+const equalButton = document.getElementById('equals_btn')
+const clearButton = document.getElementById('clear_btn')
+const clearAllButton = document.getElementById('all_clear_btn')
 
-const plusButton = document.getElementsByClassName('b+')[0];
-const subtractButton = document.getElementsByClassName('b-')[0];
-const multiplyButton = document.getElementsByClassName('bX')[0];
-const divisionButton = document.getElementsByClassName('bDivision')[0];
+const plusButton = document.getElementById('plus_btn')
+const subtractButton = document.getElementById('minus_btn')
+const multiplyButton = document.getElementById('multiply_btn')
+const divisionButton = document.getElementById('divide_btn')
+const git_btn = document.getElementById('git_btn')
 
 let equalPress = false;
 let plusPress = false;
@@ -254,3 +247,6 @@ equalButton.addEventListener('click', () => {
     }
 });
 
+git_btn.addEventListener('click', () => {
+    window.open('https://github.com/Jonthejon10')
+})
